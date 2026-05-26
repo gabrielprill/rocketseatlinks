@@ -1,0 +1,25 @@
+Explicação da expressão original
+
+A expressão original !((idade >= 18 && possuiDocumento) || responsavelPresente) funciona como um grande filtro de negação externa.
+A parte interna: O sistema primeiro verifica se o participante é um
+"Participante Autônomo" (maior de idade e com documento)ou se ele possui um "Responsável Presente".
+A negação externa (!): O símbolo de exclamação no início inverte tudo. Ou seja, o resultado só será Verdadeiro
+(Situação Irregular) se o participante não se encaixar em nenhuma das situações de entrada permitidas citadas acima.
+
+
+Reescrita usando as Leis de De Morgan
+
+Para remover o parênteses externo, aplicamos a regra: negamos os blocos individuais e
+invertemos ooperador principal de OU (||) para E (&&).
+Negar os blocos e inverter o OU:
+!(idade >= 18 && possuiDocumento) && !responsavelPresente
+Aplicar De Morgan no primeiro bloco - inverter o E para OU:
+(idade < 18 || !possuiDocumento) && !responsavelPresente
+Expressão final: (idade < 18 || !possuiDocumento) && !responsavelPresente
+
+
+Explicação da nova forma em linguagem natural
+
+A nova forma é muito mais direta para entender o motivo da irregularidade:
+O participante está irregular se ele apresentar algum problema com seus requisitos individuais
+(ser menor de idade ou estar sem documento) e, cumulativamente, não tiver um responsável por perto para validar sua entrada.

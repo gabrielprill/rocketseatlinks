@@ -1,0 +1,5 @@
+contaBloqueada: Significa que a conta está impedida para uso, pois o estado é verdadeiro nesse caso.
+!contaBloqueada: Significa que a conta não está impedida para uso, pois ! inverte o estado da variável.
+
+Se contaBloqueada = V, então o !contaBloqueada diz que ela está apta para uso.
+Se contaBloqueada = F, então o !contaBloqueada diz que ela está realmente bloqueada.

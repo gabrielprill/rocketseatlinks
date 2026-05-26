@@ -1,0 +1,12 @@
+int resultado = float x + int y;
+
+Nesse caso o erro é de sintaxe, pois dentro de uma operação não devemos declarar "float" ou "int",
+isso deve ser feito previamente por exemplo:
+
+float x;
+int y;
+
+int resultado = x + y;
+
+Aí sim daria certo, mas ainda teríamos o mesmo erro do Exercício 30, onde o int resultado não mostraria o valor decimal
+que o "float x" poderia ter.

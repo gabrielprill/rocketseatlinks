@@ -1,0 +1,28 @@
+Sim, as expressões em cada item possuem o mesmo significado lógico. Essas equivalências são fundamentais na programação
+para simplificar condições e tornar o código mais legível.
+
+
+1. !(A && B) e !A || !B
+Essas expressões são equivalentes pela Primeira Lei de De Morgan.
+Negar que duas coisas acontecem ao mesmo tempo é o mesmo que dizer que, pelo menos, uma delas não aconteceu.
+Imagine que para entrar em uma festa você precisa de Convite (A) e Traje Fino (B).
+Se alguém diz que você "não pode entrar com as duas coisas", significa que ou você está sem convite,
+ou está sem o traje (ou sem os dois).
+
+2. !(A || B) e !A && !B
+Esta operação representa a Segunda Lei de De Morgan.
+Negar que qualquer uma das opções seja verdadeira significa que todas as opções devem ser falsas simultaneamente.
+"Não pode ser Professor (A) ou Coordenador (B)". Para isso ser verdade, a pessoa não pode ser professor e
+também não pode ser coordenadora. Se ela for qualquer um dos dois, a negação inicial já seria falsa.
+
+3. !(idade >= 18) e idade < 18
+Possuem o mesmo significado porque tratam de intervalos numéricos opostos.
+
+Se você define que "não é verdade que a idade é maior ou igual a 18",
+o único espaço que sobra na reta numérica são os valores menores que 18.
+Se a idade for 17, ambas as expressões resultam em Verdadeiro. Se for 18, ambas resultam em Falso.
+
+4. !(nota < 7) e nota >= 7
+Também são equivalentes por serem complementares.
+Negar que algo é "menor que 7" é o mesmo que afirmar que esse algo é "7 ou qualquer valor acima de 7".
+Se a nota for 7.0, a primeira expressão !(7 < 7) vira !(Falso), que é Verdadeiro. A segunda expressão 7 >= 7 também é Verdadeira.

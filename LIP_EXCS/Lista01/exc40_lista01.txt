@@ -1,0 +1,8 @@
+int x = 2 + 3 * 4;
+int y = (2 + 3) * 4;
+
+Na int x, como não temos ordem de prioridade (que deveria ser definida por parenteses),
+o 3 vai multiplicar o 4, que dará 12, e então somará o 2, sendo assim, o resultado de int x será 14;
+
+Na int y, como temos os parenteses para definir a prioridade, o 2 e o 3 serão somados, totalizando 5,
+e então multiplicados por 4, resultando na int y = 20;
