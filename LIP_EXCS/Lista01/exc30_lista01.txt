@@ -1,6 +1,0 @@
-float a = 7.5;
-int b = 2;
-int c = a / b;
-
-Nessa operação o programa vai apresentar o resultado 3, quando deveria ser 3.75,
-porque como o "c" é um inteiro ele não vai reconhecer o valor decimal.
